@@ -1,0 +1,42 @@
+.page {
+  margin: 1rem auto !important;
+  width: 100%;
+  font-family: 'Courier New', Courier, monospace !important;
+
+  &.size-lg {
+    max-width: 21cm;
+    height: 29.7cm;
+
+    .panel-print {
+      height: 29.7cm;
+
+      .panel-body {
+        padding: 60px;
+      }
+    }
+  }
+}
+
+
+@media print {
+  .app-print{
+    background-color: #fff !important;
+  }
+  .page {
+    margin: 0 !important;
+
+    &.size-lg {
+      max-width: 21cm !important;
+      height: 29.7cm !important;
+    }
+
+    .panel-print {
+      .panel-header {
+        display: none !important;
+      }
+      .panel-body{
+        padding: 0 !important;
+      }
+    }
+  }
+}

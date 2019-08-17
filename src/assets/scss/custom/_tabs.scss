@@ -1,0 +1,171 @@
+.tab-content {
+  border: none;
+  background: transparent;
+  outline: none;
+  .tab-pane {
+    outline: none;
+    padding: 1.5rem 1rem;
+  }
+}
+
+.nav-tabs {
+  outline: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+  .nav-link {
+    color: rgba(0, 0, 0, 0.4);
+    -webkit-transition: .25s;
+    -o-transition: .25s;
+    transition: .25s;
+    font-weight: 500;
+    padding-left: 0;
+    padding-right: 0;
+    border-bottom: 4px solid transparent;
+
+    margin-right: 1.5rem;
+    >.icon {
+      margin-right: .5em;
+      line-height: 1;
+    }
+
+    &:hover {
+      color: $app-body-color-dark;
+      background: transparent;
+      border-color: transparent transparent transparent;
+    }
+
+    &.active {
+      color: $primary;
+      background: transparent;
+    }
+
+    &.active,
+    &.active:focus,
+    &.active:hover,
+    .nav-item.show &,
+    .nav-item.show &:focus,
+    .nav-item.show &:hover,
+    .nav-item.open &,
+    .nav-item.open &:focus,
+    .nav-item.open &:hover {
+      background: transparent;
+      border-color: transparent;
+      border-bottom-color: $primary;
+    }
+  }
+
+  .dropdown-menu {
+    .dropup & {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+      margin-bottom: -1px;
+    }
+  }
+}
+
+// Nav Tabs Line
+.nav-tabs-line {
+  position: relative;
+
+  .nav-item {
+
+    &.open>.nav-link,
+    &.open>.nav-link:focus,
+    &.open>.nav-link:hover,
+    &.show>.nav-link,
+    &.show>.nav-link:focus,
+    &.show>.nav-link:hover {
+      border-bottom-color: $primary;
+    }
+  }
+
+  .nav-link {
+    padding: .715rem 0;
+    margin-right: 1.875rem;
+    border-bottom: 4px solid transparent;
+
+    &:hover,
+    &:focus {
+      border-color: transparent;
+      background-color: transparent;
+    }
+
+    &:hover {
+      border-color: transparent;
+      border-bottom-color: #8591A0;
+    }
+
+    &.active,
+    &.active:focus,
+    &.active:hover,
+    .nav-item.show &,
+    .nav-item.show &:focus,
+    .nav-item.show &:hover,
+    .nav-item.open &,
+    .nav-item.open &:focus,
+    .nav-item.open &:hover {
+      color: $primary;
+      background-color: transparent;
+      border-bottom: 4px solid $primary;
+    }
+  }
+
+  &.nav-tabs-bottom {
+    .nav-item {
+
+      &.open>.nav-link,
+      &.open>.nav-link:focus,
+      &.open>.nav-link:hover,
+      &.show>.nav-link,
+      &.show>.nav-link:focus,
+      &.show>.nav-link:hover {
+        border-top-color: $primary;
+      }
+    }
+
+    .nav-link {
+      border-top: 4px solid transparent;
+      border-bottom: none;
+
+      &:hover {
+        border-top-color: $border;
+        border-bottom-color: transparent;
+      }
+
+      &.active,
+      &.active:focus,
+      &active:hover,
+      .nav-item.open &,
+      .nav-item.open &:focus,
+      .nav-item.open &:hover,
+      .nav-item.show &,
+      .nav-item.show &:focus,
+      .nav-item.show &:hover {
+        border-top: 4px solid $primary;
+        border-bottom: none;
+      }
+    }
+  }
+
+  .dropdown-menu {
+    margin-top: 0;
+
+    .dropup & {
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+.tabs-auth {
+  .nav-tabs {
+    .nav-item {
+      .nav-link {
+        &.active {
+          font-size: 24px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

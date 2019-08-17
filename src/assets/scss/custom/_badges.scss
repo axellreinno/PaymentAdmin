@@ -1,0 +1,116 @@
+.badge{
+  font-weight: $badge-font-weight;
+  letter-spacing: $badge-letter-spacing;
+}
+
+.badge-primary {
+  @include badge-variant($primary, $primary-color);
+}
+
+.badge-secondary {
+  @include badge-variant($secondary, $secondary-color);
+}
+
+.badge-success {
+  @include badge-variant($success, $success-color);
+}
+
+.badge-info {
+  @include badge-variant($info, $info-color);
+}
+
+.badge-warning {
+  @include badge-variant($warning, $warning-color);
+}
+
+.badge-danger {
+  @include badge-variant($danger, $danger-color);
+}
+
+.label{
+  padding: 2px .5rem;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: $badge-letter-spacing;
+  border-radius: .25rem;
+  &-rounded{
+    border-radius: 10px;
+  }
+  &.label-md{
+    padding: 4px .5rem;
+  }
+  
+}
+
+.label-primary {
+  @include badge-variant($primary, $primary-color);
+}
+
+.label-secondary {
+  @include badge-variant($secondary, $secondary-color);
+}
+
+.label-success {
+  @include badge-variant($success, $success-color);
+}
+
+.label-info {
+  @include badge-variant($info, $info-color);
+}
+
+.label-warning {
+  @include badge-variant($warning, $warning-color);
+}
+
+.label-danger {
+  @include badge-variant($danger, $danger-color);
+}
+
+
+.label-outline-primary {
+  @include badge-outline-variant($primary, $primary);
+}
+
+.label-outline-secondary {
+  @include badge-outline-variant($secondary, $secondary);
+}
+
+.label-outline-success {
+  @include badge-outline-variant($success, $success);
+}
+
+.label-outline-info {
+  @include badge-outline-variant($info, $info);
+}
+
+.label-outline-warning {
+  @include badge-outline-variant($warning, $warning);
+}
+
+.label-outline-danger {
+  @include badge-outline-variant($danger, $danger);
+}
+
+.label-gd-primary {
+  @include badge-gd-variant($primary, $primary-color);
+}
+
+.label-gd-secondary {
+  @include badge-gd-variant($secondary, $secondary-color);
+}
+
+.label-gd-success {
+  @include badge-gd-variant($success, $success-color);
+}
+
+.label-gd-info {
+  @include badge-gd-variant($info, $info-color);
+}
+
+.label-gd-warning {
+  @include badge-gd-variant($warning, $warning-color);
+}
+
+.label-gd-danger {
+  @include badge-gd-variant($danger, $danger-color);
+}

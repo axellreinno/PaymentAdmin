@@ -1,0 +1,34 @@
+.el-alert{
+  margin-bottom: 1rem;
+  &.is-light{
+    &.el-alert--success{
+      color: #67C23A;
+      background: #f0f9eb ;
+      .el-alert__closebtn{
+        color: #67C23A;
+      }
+    }
+    &.el-alert--info{
+      color: #00a8ff;
+      background: #e5f6ff ;
+      .el-alert__closebtn{
+        color: #00a8ff;
+      }
+    }
+    &.el-alert--warning{
+      color: #E6A23C;
+      background: #fdf6ec ;
+      .el-alert__closebtn{
+        color: #E6A23C;
+      }
+    }
+    &.el-alert--error{
+      color: #F56C6C;
+      background: #fef0f0 ;
+      .el-alert__closebtn{
+        color: #F56C6C;
+      }
+    }
+  }
+}
+

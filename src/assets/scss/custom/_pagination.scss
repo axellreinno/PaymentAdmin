@@ -1,0 +1,24 @@
+.el-pagination {
+  color: $app-body-color;
+  .el-pagination__total {
+    color: $app-body-color;
+  }
+  .el-pager {
+    li {
+      &.hover,
+      &:hover {
+        color: $primary;
+      }
+      &.active {
+        color: $primary;
+      }
+    }
+  }
+  .el-input__inner {
+    &.disabled,
+    &:disabled,
+    &[readonly] {
+      cursor: pointer;
+    }
+  }
+}

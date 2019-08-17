@@ -1,0 +1,220 @@
+//
+// Buttons
+// --------------------------------------------------
+
+@mixin button-variant($background, $color){
+    color: $color;
+    background: $background;
+    border-color: $background;
+    &.hover,
+    &:hover{
+        color: $color;
+        background: lighten($background, 5%);
+        border-color: lighten($background, 5%);
+    }
+    &.focus,
+    &:focus{
+        box-shadow: none;
+    }
+    &.disabled,
+    &:disabled{
+        color: $color;
+        background: $background;
+        border-color: $background;
+        cursor: not-allowed;
+    }
+    &:not(:disabled):not(.disabled).active,
+    &:not(:disabled):not(.disabled):active,
+    .show > &.dropdown-toggle{
+        color: $color;
+        background: darken($background, 5%);
+        border-color: darken($background, 5%);
+    }
+    &:not(:disabled):not(.disabled).active:focus,
+    &:not(:disabled):not(.disabled):active:focus,
+    .show > &.dropdown-toggle:focus 
+    {
+        box-shadow: none;
+    }
+}
+@mixin button-inverse-variant($background, $color){
+    color: $color;
+    background: $background;
+    border-color: $background;
+    &.hover,
+    &:hover{
+        color: #76838f;
+        background: $background;
+        border-color: #f3f7f9;
+    }
+    &.focus,
+    &:focus{
+        box-shadow: none;
+    }
+    &.disabled,
+    &:disabled{
+        color: $color;
+        background: $background;
+        border-color: $background;
+        cursor: not-allowed;
+    }
+    &:not(:disabled):not(.disabled).active,
+    &:not(:disabled):not(.disabled):active,
+    .show > &.dropdown-toggle{
+        color: #76838f;
+        background: $background;
+        border-color: #f3f7f9;
+    }
+    &:not(:disabled):not(.disabled).active:focus,
+    &:not(:disabled):not(.disabled):active:focus,
+    .show > &.dropdown-toggle:focus 
+    {
+        box-shadow: none;
+    }
+}
+@mixin button-pure-variant($background, $color, $color2){
+    color: $color;
+    background: $background;
+    border-color: $background;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    &.hover,
+    &:hover{
+        color: $color2;
+        background: transparent;
+        border-color: transparent;
+    }
+    &.focus,
+    &:focus{
+        box-shadow: none;
+    }
+    &.disabled,
+    &:disabled{
+        color: $color;
+        background: $background;
+        border-color: $background;
+        cursor: not-allowed;
+    }
+    &:not(:disabled):not(.disabled).active,
+    &:not(:disabled):not(.disabled):active,
+    .show > &.dropdown-toggle{
+        color: $color2;
+        background: transparent;
+        border-color: transparent;
+    }
+    &:not(:disabled):not(.disabled).active:focus,
+    &:not(:disabled):not(.disabled):active:focus,
+    .show > &.dropdown-toggle:focus 
+    {
+        box-shadow: none;
+    }
+}
+@mixin button-auth-variant($background, $color){
+    color: $color;
+    background: $background;
+    border-color: $background;
+    letter-spacing: 2px;
+    &.hover,
+    &:hover{
+        color: $color;
+        background: #074fae;
+        border-color: #074fae;
+    }
+    &.focus,
+    &:focus{
+        box-shadow: none;
+    }
+    &.disabled,
+    &:disabled{
+        color: $color;
+        background: $background;
+        border-color: $background;
+        cursor: not-allowed;
+    }
+    &:not(:disabled):not(.disabled).active,
+    &:not(:disabled):not(.disabled):active,
+    .show > &.dropdown-toggle{
+        color: $color;
+        background: #074fae;
+        border-color: #074fae;
+    }
+    &:not(:disabled):not(.disabled).active:focus,
+    &:not(:disabled):not(.disabled):active:focus,
+    .show > &.dropdown-toggle:focus 
+    {
+        box-shadow: none;
+    }
+}
+
+@mixin button-outline-variant($background, $color){
+    color: $background;
+    background: transparent;
+    border-color: $background;
+    font-weight: 300;
+    &.hover,
+    &:hover{
+        color: $color;
+        background: $background;
+        border-color: $background;
+    }
+    &.focus,
+    &:focus{
+        box-shadow: none;
+    }
+    &.disabled,
+    &:disabled{
+        color: $background;
+        background: transparent;
+        border-color: $background;
+        cursor: not-allowed;
+    }
+    &:not(:disabled):not(.disabled).active,
+    &:not(:disabled):not(.disabled):active,
+    .show > &.dropdown-toggle{
+        color: $color;
+        background: $background;
+        border-color: $background;
+    }
+    &:not(:disabled):not(.disabled).active:focus,
+    &:not(:disabled):not(.disabled):active:focus,
+    .show > &.dropdown-toggle:focus 
+    {
+        box-shadow: none;
+    }
+}
+@mixin button-outline-default($background, $color){
+    color: $color;
+    background: transparent;
+    border-color: $background;
+    font-weight: 300;
+    &.hover,
+    &:hover{
+        color: $color;
+        background: lighten($background, 5%);
+        border-color: $background;
+    }
+    &.focus,
+    &:focus{
+        box-shadow: none;
+    }
+    &.disabled,
+    &:disabled{
+        color: $background;
+        background: transparent;
+        border-color: $background;
+        cursor: not-allowed;
+    }
+    &:not(:disabled):not(.disabled).active,
+    &:not(:disabled):not(.disabled):active,
+    .show > &.dropdown-toggle{
+        color: $color;
+        background: $background;
+        border-color: $background;
+    }
+    &:not(:disabled):not(.disabled).active:focus,
+    &:not(:disabled):not(.disabled):active:focus,
+    .show > &.dropdown-toggle:focus 
+    {
+        box-shadow: none;
+    }
+}

@@ -1,0 +1,46 @@
+body {
+  color: $app-body-color;
+  background: $app-body-background;
+  font-family: $app-body-font-family;
+  font-weight: $app-body-font-weight;
+}
+
+a {
+  color: $primary;
+
+  &:hover {
+    color: darken($primary, 5%);
+    text-decoration: underline;
+  }
+}
+
+.page-action {
+  position: fixed;
+  right: 32px;
+  bottom: 55px;
+  z-index: 1290;
+  -webkit-animation-duration: 3s;
+  -o-animation-duration: 3s;
+  animation-duration: 3s;
+}
+
+// img
+.img-bordered {
+  border: 1px solid $border;
+  padding: 3px;
+}
+
+.full-container {
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  max-width: 100%;
+}
+
+
+.apexcharts-yaxis-label{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}

@@ -1,0 +1,333 @@
+.form-group {
+  position: relative;
+
+  &.has-success {
+    .form-control-icon {
+      color: $success
+    }
+
+    .form-control {
+      color: $success;
+      border-color: $success;
+    }
+
+    .radio-group,
+    .checkbox-group {
+      padding: .429rem 1rem;
+      border: 1px solid $success;
+      border-radius: .215rem;
+    }
+
+    .dropify-wrapper {
+      border-color: $success;
+    }
+  }
+
+  &.has-error {
+    .form-control-icon {
+      color: $danger
+    }
+
+    .form-control {
+      color: $danger;
+      border-color: $danger;
+    }
+
+    .radio-group,
+    .checkbox-group {
+      padding: .429rem 1rem;
+      border: 1px solid $danger;
+      border-radius: .215rem;
+    }
+
+    .dropify-wrapper {
+      border-color: $danger;
+    }
+  }
+}
+
+.form-control-label {
+  margin-bottom: 0;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.form-control {
+  color: $form-color;
+  padding: $form-padding;
+  border: $form-border;
+  border-radius: $form-border-radius;
+  height: calc(1.5rem + .75rem + 2px);
+
+  &:hover {
+    border-color: $form-hover-border-color;
+  }
+
+  &:focus {
+    color: $form-color;
+    box-shadow: none;
+    border-color: $primary;
+  }
+
+  &.disabled,
+  &:disabled,
+  &[readonly] {
+    cursor: not-allowed;
+    background: $form-disabled-background;
+  }
+
+  &::-webkit-input-placeholder {
+    color: $form-placeholder;
+  }
+
+  &-lg {
+    padding: $form-lg-padding;
+    font-size: $form-lg-font-size;
+  }
+
+  &+.pre-icon {
+    position: absolute;
+    bottom: 5px;
+    left: -30px;
+  }
+}
+
+.form-control-auth {
+  border-color: #f4f6fa;
+  background-color: #f4f6fa;
+  transition: all .2s ease;
+
+  &:focus {
+    border-color: darken(#f4f6fa, 5%);
+    background-color: darken(#f4f6fa, 5%);
+  }
+
+  &:hover {
+    border-color: darken(#f4f6fa, 5%);
+    background-color: darken(#f4f6fa, 5%);
+  }
+}
+
+// Elemetn Styling
+.el-input {
+  .el-input__count {
+    .el-input__count-inner {
+      line-height: calc(1.5rem + .75rem);
+    }
+  }
+}
+
+.el-input__inner {
+  color: $form-color;
+  padding: $form-padding;
+  width: 100%;
+  height: calc(1.5rem + .75rem + 2px);
+  border: $form-border;
+  border-radius: $form-border-radius;
+
+  &:focus {
+    color: $form-color;
+    box-shadow: none;
+    border-color: $primary;
+  }
+}
+
+.el-input__icon {
+  line-height: $line-height;
+}
+
+// Label
+.el-form--label-top {
+  .el-form-item__label {
+    line-height: normal;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+.el-form-item__label {
+  color: $app-body-color;
+  margin-bottom: 0;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+// Textarea
+.el-textarea {
+  .el-textarea__inner {
+    border: $form-border;
+
+    &:focus {
+      border-color: $primary;
+    }
+  }
+}
+
+// ==Select
+.el-select {
+  width: 100%;
+
+  .el-input__inner {
+    &:focus {
+      border-color: $primary;
+    }
+  }
+
+  .el-input.is-focus {
+    .el-input__inner {
+      border-color: $primary;
+    }
+  }
+}
+
+
+.el-select-dropdown__list {
+  padding: $dropdonn-menu-padding;
+
+  .el-select-dropdown__item {
+    color: $app-body-color;
+    padding: $dropdown-item-padding;
+    line-height: $line-height;
+    margin: $dropdown-item-margin;
+
+    &.selected {
+      color: $primary;
+      font-weight: 400;
+    }
+
+    &:hover,
+    &:focus {
+      background: $dropdown-item-hover-background;
+    }
+
+    img {
+      width: 100%;
+      max-width: 50px;
+    }
+  }
+}
+
+// ==Range
+.el-range-editor {
+  .el-input__inner {
+    padding: $form-padding;
+  }
+
+  .el-range__icon {
+    line-height: $line-height;
+  }
+}
+
+// ==Date
+.el-date-editor {
+  &.el-date-editor.el-input {
+    width: 100%;
+  }
+}
+
+.el-date-editor {
+  .el-range-separator {
+    color: $app-body-color;
+    line-height: 1.8;
+    padding: 0;
+  }
+
+  .el-range__close-icon {
+    line-height: $line-height;
+  }
+}
+
+.el-date-table {
+  td.today {
+    span {
+      color: $primary;
+      font-weight: 400;
+    }
+  }
+
+  td.end-date,
+  td.start-date {
+    span {
+      background-color: $primary;
+    }
+  }
+
+  td.available {
+    &:hover {
+      color: $primary !important;
+      font-weight: 400;
+    }
+  }
+}
+
+.el-date-editor--daterange.el-input,
+.el-date-editor--daterange.el-input__inner,
+.el-date-editor--timerange.el-input,
+.el-date-editor--timerange.el-input__inner {
+  width: 100%;
+}
+
+.el-date-table {
+  th {
+    color: $app-body-color;
+  }
+
+  td {
+    &.current {
+      &:not(.disabled) {
+        span {
+          color: $primary-color;
+          background: $primary;
+        }
+      }
+    }
+  }
+}
+
+.el-picker-panel__shortcut {
+  color: $app-body-color;
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+.el-date-picker__header-label {
+  color: $app-body-color;
+
+  &:hover,
+  &.active {
+    color: $primary;
+  }
+}
+
+.el-button--text {
+  color: $primary;
+}
+
+// ==Pagination
+
+.el-form-item.is-success .el-input__inner,
+.el-form-item.is-success .el-input__inner:focus,
+.el-form-item.is-success .el-textarea__inner,
+.el-form-item.is-success .el-textarea__inner:focus {
+  border-color: $success;
+}
+
+.el-form-item.is-error .el-input__inner,
+.el-form-item.is-error .el-input__inner:focus,
+.el-form-item.is-error .el-textarea__inner,
+.el-form-item.is-error .el-textarea__inner:focus,
+.el-message-box__input input.invalid,
+.el-message-box__input input.invalid:focus {
+  border-color: $danger;
+}
+
+.el-form-item__error {
+  color: $danger;
+}
+
+.el-form-item.is-required:not(.is-no-asterisk) .el-form-item__label-wrap>.el-form-item__label:before,
+.el-form-item.is-required:not(.is-no-asterisk)>.el-form-item__label:before{
+  color: $danger;
+}

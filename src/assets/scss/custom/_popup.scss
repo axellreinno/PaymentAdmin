@@ -1,0 +1,209 @@
+// popup
+.popup-hover {
+  position: relative;
+  z-index: 1;
+
+  &:hover {
+    .popup-menu {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  .popup-menu {
+    background: $popup-menu-background;
+    min-width: $popup-menu-min-width;
+    margin-top: $popup-menu-margin;
+    padding: $popup-menu-padding;
+    border-radius: $popup-menu-radius;
+    box-shadow: $popup-menu-shadow;
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+
+    .popup-bg {
+      color: rgba(26, 115, 232, 0.2);
+      font-size: 80px;
+      position: absolute;
+      bottom: -30px;
+      right: -10px;
+    }
+
+    .popup-header {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      padding-bottom: .5rem;
+      display: table;
+      width: 100%;
+      padding: .5rem;
+
+      .popup-img {
+        width: $popup-img-width-height;
+        height: $popup-img-width-height;
+        display: table-cell;
+        border-radius: 50%;
+        vertical-align: middle;
+        margin-right: 1rem;
+      }
+
+      .popup-info {
+        width: 100%;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: left;
+      }
+
+      .popup-title {
+        color: $popup-title-color;
+        font-size: $popup-title-size;
+        font-weight: $popup-title-weight;
+        letter-spacing: $popup-title-spacing;
+        margin-bottom: 0;
+      }
+
+      .popup-subtitle {
+        color: $popup-subtitle-color;
+        font-size: $popup-subtitle-size;
+        text-transform: uppercase;
+        letter-spacing: $popup-subtitle-spacing;
+        margin-top: -.25rem;
+      }
+    }
+
+    .popup-body {
+      padding: 1rem 0;
+
+      .popup-nav {
+        padding: 0;
+
+        .popup-item {
+          list-style: none;
+          text-align: left;
+          width: 100%;
+
+          &:not(:last-child) {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+          }
+
+          .popup-link {
+            color: $app-body-color-dark;
+            display: block;
+            padding: .75rem 1rem;
+            font-weight: 500;
+            text-decoration: none;
+
+            .popup-icon {
+              color: $primary;
+              margin-right: .75rem;
+              font-size: 18px;
+              vertical-align: middle;
+              transition: all 0.2s ease;
+            }
+
+            span {
+              display: inline-block;
+              transition: all 0.2s ease;
+            }
+
+            &:hover {
+              background: #f5faff;
+            }
+
+            
+          }
+        }
+        &.animated {
+          .popup-link{
+            &:hover {
+              .popup-icon {
+                transform: translateX(4px);
+              }
+  
+              span {
+                transform: translateX(4px);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .popup-footer {
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      padding: .5rem;
+    }
+  }
+}
+
+// Popup Animated
+.popup-hover {
+  &.popup-animated {
+    .popup-menu {
+      transition: all 0.3s ease;
+      transform: translateY(20px);
+    }
+
+    &:hover {
+      .popup-menu {
+        transform: translateY(0px);
+      }
+    }
+  }
+}
+
+// Popup Position
+.popup-hover-right {
+  .popup-menu {
+    right: 0;
+  }
+}
+
+// Popup Themes
+.popup-hover-dark {
+  .popup-menu {
+    background: $popup-menu-background-dark !important;
+
+    .popup-bg {
+      color: rgba(255, 255, 255, 0.1);
+    }
+
+    .popup-header {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+      .popup-title {
+        color: $popup-title-color-dark !important;
+      }
+
+      .popup-subtitle {
+        color: $popup-subtitle-color-dark !important;
+      }
+    }
+
+    .popup-body {
+      .popup-nav {
+        .popup-item {
+          .popup-link {
+            color: #fff;
+
+            .popup-icon {
+              color: #fff;
+            }
+
+            &:hover {
+              background: transparent;
+            }
+          }
+        }
+      }
+    }
+
+    .popup-footer {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding: .5rem;
+    }
+    
+
+
+  }
+}

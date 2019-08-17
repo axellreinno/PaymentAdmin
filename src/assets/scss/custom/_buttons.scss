@@ -1,0 +1,397 @@
+//
+// Buttons
+// --------------------------------------------------
+.input-group-btn {
+  .btn {
+    border-radius: .215rem 0 0 .215rem;
+    border-right: 0;
+  }
+}
+
+.btn {
+  font-family: 'Google Sans', sans-serif;
+  padding: .375rem 1.25rem;
+  border-radius: .215rem;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: .25px;
+  @include button-variant($primary, $primary-color);
+
+  &.btn-sm {
+    padding: 0.25rem 0.5rem;
+  }
+
+  &-lg {
+    padding: .875rem 1rem;
+    font-size: 14px;
+  }
+}
+
+.btn-rounded {
+  border-radius: 100%;
+}
+
+.btn-top-action {
+  color: #76838f;
+  width: 35px;
+  height: 35px;
+  background: #e2ecf1;
+  border-color: #d1e0e8;
+  line-height: 35px;
+  padding: 0;
+
+  &:hover {
+    color: #76838f;
+    box-shadow: none;
+    background: #e2ecf1;
+    border-color: #c0c4cc;
+  }
+  &:focus{
+    color: #76838f;
+    box-shadow: none;
+    background: #e2ecf1;
+    border-color: #1a73e8;
+  }
+  &:not(:disabled):not(.disabled).active,
+    &:not(:disabled):not(.disabled):active,
+    .show > &.dropdown-toggle{
+      color: #76838f;
+      box-shadow: none;
+      background: #e2ecf1;
+      border-color: #1a73e8;
+    }
+}
+
+.btn-floating {
+  width: 3.5rem;
+  height: 3.5rem;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 100%;
+  -webkit-box-shadow: 0 10px 10px 0 rgba(60, 60, 60, .1);
+  box-shadow: 0 10px 10px 0 rgba(60, 60, 60, .1);
+}
+
+// Button Solid 
+.btn-primary {
+  @include button-variant($primary, $primary-color);
+}
+
+.btn-secondary {
+  @include button-variant($secondary, $secondary-color);
+}
+
+.btn-success {
+  @include button-variant($success, $success-color);
+}
+
+.btn-info {
+  @include button-variant($info, $info-color);
+}
+
+.btn-warning {
+  @include button-variant($warning, $warning-color);
+}
+
+.btn-danger {
+  @include button-variant($danger, $danger-color);
+}
+
+.btn-dark {
+  @include button-variant($dark, $dark-color);
+}
+
+.btn-light {
+  @include button-variant($light, $light-color);
+}
+
+.btn-inverse {
+  @include button-inverse-variant(transparent, $app-body-color-dark);
+}
+
+.btn-pure {
+  @include button-pure-variant(white, $app-body-color-dark, $primary);
+}
+
+.btn-pure-primary {
+  @include button-pure-variant(white, $primary, $primary);
+}
+
+.btn-pure-warning {
+  @include button-pure-variant(white, $warning, $warning);
+}
+
+.btn-pure-danger {
+  @include button-pure-variant(white, $danger, $danger);
+}
+
+.btn-auth {
+  @include button-auth-variant(#074fae, white);
+}
+
+// Button Outline 
+.btn-outline-default {
+  @include button-outline-default($default, $default-color);
+}
+
+.btn-outline-primary {
+  @include button-outline-variant($primary, $primary-color);
+}
+
+.btn-outline-secondary {
+  @include button-outline-variant($secondary, $secondary-color);
+}
+
+.btn-outline-success {
+  @include button-outline-variant($success, $success-color);
+}
+
+.btn-outline-info {
+  @include button-outline-variant($info, $info-color);
+}
+
+.btn-outline-warning {
+  @include button-outline-variant($warning, $warning-color);
+}
+
+.btn-outline-danger {
+  @include button-outline-variant($danger, $danger-color);
+}
+
+.btn-outline-dark {
+  @include button-outline-variant($dark, $dark-color);
+}
+
+.btn-outline-light {
+  @include button-outline-variant($light, $light-color);
+}
+
+// Button Animation
+.btn-animate {
+  position: relative;
+  overflow: hidden;
+
+  span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+
+.btn-animate-side {
+  span {
+    -webkit-transition: -webkit-transform .2s ease-out 0s;
+    -o-transition: -o-transform .2s ease-out 0s;
+    transition: transform .2s ease-out 0s;
+
+    .icon {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      display: block;
+      opacity: 0;
+      -webkit-transition: opacity .2s ease-out 0s;
+      -o-transition: opacity .2s ease-out 0s;
+      transition: opacity .2s ease-out 0s;
+      -webkit-transform: translate(-20px, -50%);
+      -ms-transform: translate(-20px, -50%);
+      -o-transform: translate(-20px, -50%);
+      transform: translate(-20px, -50%);
+    }
+  }
+
+  &:hover {
+    span {
+      -webkit-transform: translate(10px, 0);
+      -ms-transform: translate(10px, 0);
+      -o-transform: translate(10px, 0);
+      transform: translate(10px, 0);
+
+      .icon {
+        opacity: 1;
+      }
+    }
+  }
+
+  &.btn-xs,
+  .btn-group-xs>&.btn {
+    padding: .215rem 1rem;
+  }
+
+  &.btn-xs span>.icon,
+  .btn-group-xs>&.btn span>.icon {
+    left: 5px;
+  }
+
+  &.btn-xs:hover span,
+  .btn-group-xs>&.btn:hover span {
+    -webkit-transform: translate(8px, 0);
+    -ms-transform: translate(8px, 0);
+    -o-transform: translate(8px, 0);
+    transform: translate(8px, 0);
+  }
+
+  &.btn-sm {
+    padding: .429rem 1.572rem;
+  }
+
+  &.btn-sm span>.icon {
+    left: 3px
+  }
+
+  &.btn-sm:hover span {
+    -webkit-transform: translate(8px, 0);
+    -ms-transform: translate(8px, 0);
+    -o-transform: translate(8px, 0);
+    transform: translate(8px, 0);
+  }
+
+  &.btn-lg {
+    padding: .715rem 2.358rem;
+  }
+
+  &.btn-lg span>.icon {
+    left: -6px;
+  }
+
+  &.btn-lg:hover span {
+    -webkit-transform: translate(8px, 0);
+    -ms-transform: translate(8px, 0);
+    -o-transform: translate(8px, 0);
+    transform: translate(8px, 0);
+  }
+}
+
+.btn-animate-side-right {
+  span {
+    -webkit-transition: -webkit-transform .2s ease-out 0s;
+    -o-transition: -o-transform .2s ease-out 0s;
+    transition: transform .2s ease-out 0s;
+
+    .icon {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      display: block;
+      opacity: 0;
+      -webkit-transition: opacity .2s ease-out 0s;
+      -o-transition: opacity .2s ease-out 0s;
+      transition: opacity .2s ease-out 0s;
+      -webkit-transform: translate(20px, -50%);
+      -ms-transform: translate(20px, -50%);
+      -o-transform: translate(20px, -50%);
+      transform: translate(20px, -50%);
+    }
+  }
+
+  &:hover {
+    span {
+      -webkit-transform: translate(-10px, 0);
+      -ms-transform: translate(-10px, 0);
+      -o-transform: translate(-10px, 0);
+      transform: translate(-10px, 0);
+
+      .icon {
+        opacity: 1;
+      }
+    }
+  }
+
+  &.btn-xs,
+  .btn-group-xs>&.btn {
+    padding: .215rem 1rem;
+  }
+
+  &.btn-xs span>.icon,
+  .btn-group-xs>&.btn span>.icon {
+    right: 5px;
+  }
+
+  &.btn-xs:hover span,
+  .btn-group-xs>&.btn:hover span {
+    -webkit-transform: translate(-8px, 0);
+    -ms-transform: translate(-8px, 0);
+    -o-transform: translate(-8px, 0);
+    transform: translate(-8px, 0);
+  }
+
+  &.btn-sm {
+    padding: .429rem 1.572rem;
+  }
+
+  &.btn-sm span>.icon {
+    right: 3px
+  }
+
+  &.btn-sm:hover span {
+    -webkit-transform: translate(-8px, 0);
+    -ms-transform: translate(-8px, 0);
+    -o-transform: translate(-8px, 0);
+    transform: translate(-8px, 0);
+  }
+
+  &.btn-lg {
+    padding: .715rem 2.358rem;
+  }
+
+  &.btn-lg span>.icon {
+    right: -6px;
+  }
+
+  &.btn-lg:hover span {
+    -webkit-transform: translate(-8px, 0);
+    -ms-transform: translate(-8px, 0);
+    -o-transform: translate(-8px, 0);
+    transform: translate(-8px, 0);
+  }
+}
+
+.btn-animate-vertical {
+  span {
+    -webkit-transition: all .2s ease-out 0s;
+    -o-transition: all .2s ease-out 0s;
+    transition: all .2s ease-out 0s;
+
+    .icon {
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      display: block;
+      font-size: 1.5rem;
+      -webkit-transform: translate(-50%, -100%);
+      -ms-transform: translate(-50%, -100%);
+      -o-transform: translate(-50%, -100%);
+      transform: translate(-50%, -100%);
+    }
+  }
+
+  &:hover {
+    span {
+      -webkit-transform: translate(0, 150%);
+      -ms-transform: translate(0, 150%);
+      -o-transform: translate(0, 150%);
+      transform: translate(0, 150%);
+    }
+  }
+
+  &.btn-xs span>.icon,
+  .btn-group-xs>&.btn span>.icon {
+    top: -5px;
+    font-size: 1.286rem;
+  }
+
+  &.btn-sm span>.icon {
+    top: -3px;
+    font-size: 1.5rem;
+  }
+
+  &.btn-lg span>.icon {
+    font-size: 2.643rem;
+  }
+}

@@ -1,0 +1,71 @@
+.white{
+    color: white !important;
+}
+.primary{
+    color: $primary !important;
+}
+.secondary{
+    color: $secondary !important;
+}
+.success{
+    color: $success !important;
+}
+.info{
+    color: $info !important;
+}
+.warning{
+    color: $warning !important;
+}
+.danger{
+    color: $danger !important;
+}
+
+
+// Background
+.bg-primary{
+    color: #fff;
+    background: $primary !important;
+}
+.bg-secondary{
+    color: #fff!important;
+    background: $secondary !important;
+}
+.bg-success{
+    color: #fff!important;
+    background: $success !important;
+}
+.bg-info{
+    color: #fff!important;
+    background: $info !important;
+}
+.bg-warning{
+    color: #fff!important;
+    background: $warning !important;
+}
+.bg-danger{
+    color: #fff!important;
+    background: $danger !important;
+}
+
+
+.bg-gd-primary {
+    color: #fff!important;
+    background: darken($primary, 20%) linear-gradient(135deg, darken($primary, 20%) 0,$primary 100%)!important;
+}
+.bg-gd-success {
+    color: #fff!important;
+    background: darken($success, 20%) linear-gradient(135deg, darken($success, 10%) 0,$success 100%)!important;
+}
+.bg-gd-info {
+    color: #fff!important;
+    background: darken($info, 20%) linear-gradient(135deg, darken($info, 5%) 0, lighten($info, 10%) 100%)!important;
+}
+.bg-gd-warning {
+    color: #fff!important;
+    background: darken($warning, 20%) linear-gradient(135deg, darken($warning, 10%) 0,lighten($warning, 10%) 100%)!important;
+}
+.bg-gd-danger {
+    color: #fff!important;
+    background: darken($danger, 20%) linear-gradient(135deg, darken($danger, 20%) 0,$danger 100%)!important;
+}
+

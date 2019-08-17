@@ -1,0 +1,38 @@
+.v-context {
+  background: #ffffff !important;
+  border: none !important;
+  border-radius: 4px !important;
+  box-shadow: 0 0.25rem 2rem rgba(0, 0, 0, 0.08) !important;
+  -moz-box-shadow: 0 0.25rem 2rem rgba(0, 0, 0, 0.08) !important;
+  -webkit-box-shadow: 0 0.25rem 2rem rgba(0, 0, 0, 0.08) !important;
+  
+
+  ul {
+    padding: .5rem !important;
+
+    li:not(.v-context-header) {
+      color: $dropdown-item-color !important;
+      padding: $dropdown-item-padding !important;
+      margin: $dropdown-item-margin !important;
+      font-size: 14px;
+      font-weight: $app-body-font-weight !important;
+
+      &:hover {
+        color: $dropdown-item-color !important;
+        background: $dropdown-item-hover-background !important;
+      }
+
+      &:focus {
+        color: $dropdown-item-color !important;
+        background: $dropdown-item-hover-background !important;
+
+      }
+    }
+    li.v-context-header{
+        border-radius: 0.25rem 0.25rem 0 0;
+        text-align: center;
+        padding: 1rem !important;
+        margin: -.5rem -.5rem 0 -.5rem !important; 
+    }
+  }
+}

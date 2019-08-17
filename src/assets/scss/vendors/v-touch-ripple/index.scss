@@ -1,0 +1,18 @@
+.v-touch-ripple{
+  position: relative;
+  overflow: hidden;
+}
+.v-touch-ripple>.touch-ripple {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.v-touch-ripple>.touch-ripple>.ripple-inner {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,124 @@
+.app-header {
+  height: $app-header-height;
+  border-bottom: $app-header-border;
+
+  .header-logo {
+    border-right: $app-header-logo-border;
+  }
+
+  .navbar-nav {
+    margin-right: 1.25rem;
+
+    .nav-item {
+      margin: $app-header-nav-item-margin;
+      min-width: auto;
+
+      .nav-search {
+        font-family: 'Avenir Next';
+        border: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        background-color: rgba(121, 138, 185, 0.07);
+        border-radius: 30px;
+        padding: .5rem 1.25rem;
+        display: block;
+        width: 220px;
+        outline: none;
+        border: none;
+        box-shadow: none;
+        letter-spacing: .5px;
+      }
+
+      .nav-icon {
+        color: $app-header-nav-icon-color;
+        font-size: $app-header-nav-icon-size;
+      }
+
+      &.nav-history {
+
+        .popup-menu {
+          min-width: 275px;
+
+          .popup-nav {
+            max-height: 250px;
+            overflow: auto;
+            &::-webkit-scrollbar {
+              width: 6px;
+              background-color: transparent;
+            }
+
+            &::-webkit-scrollbar-track {
+              border-radius: 10px;
+              background-color: transparent;
+            }
+
+
+            &::-webkit-scrollbar-thumb {
+              border-radius: 10px;
+              -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+              background-color: #aaa;
+            }
+
+            .popup-wrapper {
+              display: table;
+              width: 100%;
+              vertical-align: middle;
+            }
+
+            .popup-icon {
+              display: table-cell;
+            }
+
+            .popup-info {
+              display: table-cell;
+
+              .popup-title {
+                font-size: 14px;
+                font-weight: 600;
+                margin-bottom: 0;
+              }
+
+              .popup-datetime {
+                color: $primary;
+                font-size: 11px;
+              }
+            }
+          }
+        }
+      }
+
+    }
+
+  }
+
+  .navbar-brand {
+    height: auto;
+  }
+
+  .navbar-toggler {
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .header-logo {
+    display: flex;
+    justify-content: space-between;
+    width: 240px;
+    height: 55px;
+  }
+
+  .header-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 200px;
+  }
+}
+
+.sidebar-minimized {
+  .app-header {
+    .header-logo {
+      width: auto;
+    }
+  }
+}

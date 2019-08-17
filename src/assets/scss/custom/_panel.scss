@@ -1,0 +1,138 @@
+.panel-auth {
+  background: #fff;
+  width: 100%;
+  max-width: 450px;
+  margin: auto;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+
+  .panel-header {
+    padding: 15%;
+    text-align: center;
+
+    img {
+      width: 100%;
+      max-width: 200px;
+    }
+  }
+
+  .panel-body {
+    .panel-title {
+      margin-bottom: 1.25rem;
+      padding: .75rem 80px;
+      font-size: 24px;
+      font-weight: 600;
+      color: #334152;
+      position: relative;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+      &::before {
+        content: '';
+        background-color: $primary;
+        width: 32px;
+        height: 7px;
+        border-radius: 2px;
+        display: block;
+        position: absolute;
+        bottom: -4px;
+        left: 80px;
+      }
+    }
+
+    .panel-form {
+      padding: 1.25rem 80px;
+    }
+  }
+
+  .panel-footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem 80px;
+  }
+}
+
+.panel-print {
+  background: #fff;
+  width: 100%;
+  box-shadow: 0px 20px 50px rgba(0,0,0,0.05);
+
+  .panel-header {
+    padding: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    img {
+      width: 100%;
+      max-width: 120px;
+    }
+
+    .panel-title {
+      color: $primary;
+      margin-bottom: 0;
+      font-weight: 600;
+    }
+  }
+
+  .panel-body {
+    padding: 60px;
+    &-text {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .5px;
+    }
+
+    &-title {
+      font-family: 'Courier New', Courier, monospace !important;
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: .5px;
+    }
+
+    .panel-section {
+      margin: 1.25rem 0;
+
+      .title {
+        margin-bottom: 0;
+        display: block;
+
+        &.after {
+          position: relative;
+
+          &::after {
+            content: ':';
+            position: absolute;
+            right: 0;
+          }
+        }
+      }
+      .text{
+        display: block;
+        &.before-rp{
+          position: relative;
+          &::before{
+            content: 'Rp';
+            position: absolute;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.or {
+  padding: 1rem 0;
+  position: relative;
+  background: #fff;
+  padding: 0 .5rem;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.1);
+    width: 100px;
+    height: 1px;
+    left: -35px;
+    top: 8px;
+    z-index: -1;
+  }
+}

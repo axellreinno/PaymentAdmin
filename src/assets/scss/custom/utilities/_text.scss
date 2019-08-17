@@ -1,0 +1,150 @@
+.text-muted {
+  color: #a3afb7 !important;
+}
+
+
+
+// text weight
+.text-light {
+  font-weight: 300 !important;
+}
+
+.text-normal {
+  font-weight: 400 !important;
+}
+
+.text-medium {
+  font-weight: 500 !important;
+}
+
+.text-semibold {
+  font-weight: 600 !important;
+}
+
+.text-bold {
+  font-weight: 700 !important;
+}
+
+// text style
+.text-italic {
+  font-style: italic !important;
+}
+
+.text-capitalize {
+  text-transform: capitalize !important;
+}
+
+// text decoration
+.text-underline {
+  text-decoration: underline !important;
+}
+.text-line-through{
+  text-decoration: line-through !important;
+}
+
+@mixin text-size {
+  @for $i from 10 through 50 {
+    .text-size-#{$i} {
+      font-size: #{$i}px !important;
+    }
+  }
+}
+
+@mixin text-spacing {
+  @for $i from 1 through 10 {
+    .text-spacing-#{$i} {
+      letter-spacing: #{$i/2}px !important;
+    }
+  }
+}
+
+@include text-size;
+@include text-spacing;
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Avenir Next';
+  font-weight: 400;
+}
+
+.text-muted {
+  color: #97a3b9;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-inverse {
+  color: #1c273c;
+}
+
+.text-teal {
+  color: #00cccc;
+}
+
+.text-dark {
+  color: #1c273c;
+}
+
+.text-indigo {
+  color: #5b47fb;
+}
+
+.text-purple {
+  color: #6f42c1;
+}
+
+.text-orange {
+  color: #fd7e14;
+}
+
+.text-pink {
+  color: #f10075;
+}
+
+.text-gray-100 {
+  color: #f4f5f8;
+}
+
+.text-gray-200 {
+  color: #e3e7ed;
+}
+
+.text-gray-300 {
+  color: #cdd4e0;
+}
+
+.text-gray-400 {
+  color: #b4bdce;
+}
+
+.text-gray-500 {
+  color: #97a3b9;
+}
+
+.text-gray-600 {
+  color: #7987a1;
+}
+
+.text-gray-700 {
+  color: #596882;
+}
+
+.text-gray-800 {
+  color: #3b4863;
+}
+
+.text-gray-900 {
+  color: #1c273c;
+}

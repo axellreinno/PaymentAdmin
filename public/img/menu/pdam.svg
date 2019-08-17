@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>pdam</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#3C8CE7" offset="0%"></stop>
+            <stop stop-color="#00EAFF" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="20" height="20"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-388.000000, -617.000000)">
+            <g id="pdam" transform="translate(388.000000, 617.000000)">
+                <g id="Group_3013" fill-rule="nonzero">
+                    <g id="Group" transform="translate(14.166667, 25.000000)" fill="#FFFFFF">
+                        <circle id="Ellipse_39-2" cx="6.25" cy="6.25" r="6.25"></circle>
+                    </g>
+                    <rect id="Rectangle_123" fill="url(#linearGradient-1)" x="0" y="0" width="40" height="40" rx="5"></rect>
+                </g>
+                <g id="Mask_Group_57-Clipped" transform="translate(10.000000, 10.000000)">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <g id="Rectangle_157"></g>
+                    <g id="Mask_Group_57" mask="url(#mask-3)">
+                        <g transform="translate(4.166667, 0.000000)" id="telephone-with-a-bolt-on-screen">
+                            <g>
+                                <path d="M10.2916667,0 L1.375,0 C0.629904999,0.00228768886 0.0264543555,0.605738333 0.0241666667,1.35083333 L0.0241666667,18.6483333 C0.0259969074,19.3937537 0.629580854,19.99771 1.375,20 L10.2916667,20 C11.036951,19.9981677 11.6406677,19.394451 11.6425,18.6491667 L11.6425,1.35083333 C11.6402123,0.605738333 11.0367617,0.00228768886 10.2916667,0 L10.2916667,0 Z M4.40666667,0.973333333 L7.25916667,0.973333333 C7.33784173,0.98824857 7.39478957,1.05700694 7.39478957,1.13708333 C7.39478957,1.21715973 7.33784173,1.2859181 7.25916667,1.30083333 L4.40666667,1.30083333 C4.32799161,1.2859181 4.27104376,1.21715973 4.27104376,1.13708333 C4.27104376,1.05700694 4.32799161,0.98824857 4.40666667,0.973333333 Z M5.83333333,19.3241667 C5.46008089,19.3241667 5.1575,19.0215858 5.1575,18.6483333 C5.1575,18.2750809 5.46008089,17.9725 5.83333333,17.9725 C6.20658578,17.9725 6.50916667,18.2750809 6.50916667,18.6483333 C6.50916667,19.0215858 6.20658578,19.3241667 5.83333333,19.3241667 L5.83333333,19.3241667 Z M10.7025,17.5 L0.963333333,17.5 L0.963333333,2.1425 L10.7025,2.1425 L10.7025,17.5 Z M2.52166667,14.6666667 L4.5,11.9166667 L3.305,11.9166667 L5.2875,9.16666667 L4.09,9.16666667 L6.69416667,5.555 L9.145,5.555 L7.1625,8.305 L8.36166667,8.305 L6.37916667,11.055 L7.57666667,11.055 L2.52166667,14.6666667 Z" id="Path_316" fill="#FFFFFF" fill-rule="nonzero"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

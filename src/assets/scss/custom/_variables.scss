@@ -1,0 +1,189 @@
+//
+// Variables
+// -----------------------------------------------------------------------
+
+// Global
+$app-body-color: #334152 !default;
+$app-body-color-dark: #1c273c !default;
+$app-body-background: #f4f5f8 !default;
+$app-body-font-family: 'Roboto',
+sans-serif !default;
+$app-body-font-weight: 400 !default;
+
+$line-height: 1.5;
+
+$border: #E7E8E9;
+
+
+// -----------------------------------------------------------------------
+
+// Sidebar
+$app-sidebar-background: #ffffff !default;
+$app-sidebar-width: 240px !default;
+
+
+// -----------------------------------------------------------------------
+
+// Color
+$default: #e4eaec;
+$default-color: #76838f;
+
+$primary: #1a73e8;
+$primary-color: #ffffff;
+
+$secondary: #6F8294;
+$secondary-color: #ffffff;
+
+$success: #11c26d;
+$success-color: #ffffff;
+
+$info: #039be5;
+$info-color: #ffffff;
+
+$warning: #ffb119;
+$warning-color: #ffffff;
+
+$danger: #ff4c52;
+$danger-color: #ffffff;
+
+$dark: #19212b;
+$dark-color: #ffffff;
+
+$light: #f8f9fa;
+$light-color: #212529;
+
+
+// -----------------------------------------------------------------------
+
+// Form Control
+$form-color: $app-body-color;
+$form-padding: .375rem 1rem;
+$form-border: 1px solid #dde2ec;
+// $form-border: 1px solid #c0c4cc;
+$form-border-color: #dde2ec;
+$form-border-radius: .215rem;
+
+$form-placeholder: #c0c4cc;
+
+// ==Hover
+$form-hover-border-color: #c0c4cc;
+
+// ==Disabled
+$form-disabled-background: #f3f7f9;
+
+// ==Size
+$form-lg-padding: 1.5rem 1rem;
+$form-lg-font-size: 16px;
+
+
+// -----------------------------------------------------------------------
+
+// Dropdown
+// ==Dropdown Menu
+$dropdown-menu-box-shadow: 0 0.25rem 2rem rgba(0, 0, 0, .08);
+$dropdonn-menu-padding: 0 .25rem;
+$dropdonn-menu-border: none;
+
+// ==Dropdown Header
+$dropdown-header-border-radius: .25rem .25rem 0 0;
+
+// ==Dropdown Item
+$dropdown-item-color: $app-body-color;
+$dropdown-item-padding: .375rem .75rem;
+$dropdown-item-margin: .25rem 0;
+
+$dropdown-item-hover-background: #f5faff;
+
+// ==Dropdown Divider
+$dropdown-divider-margin: .5rem 0;
+$dropdown-divider-border: 1px solid $border;
+
+
+// -----------------------------------------------------------------------
+
+// Table
+// ==Table Default
+$table-content-padding: 1rem;
+$table-content-border: 1px solid $border;
+
+// ==Table Striped
+$table-striped-odd-background: #F3F5F7;
+
+
+// -----------------------------------------------------------------------
+
+// Loader
+// ==Loader Overlay
+$loader-overlay-background: #3e8ef7;
+
+// -----------------------------------------------------------------------
+
+// Badge
+// ==Global
+$badge-font-weight: 400;
+$badge-letter-spacing: .5px;
+
+// -----------------------------------------------------------------------
+
+// Header
+// ==Global
+$app-header-height: 55px;
+$app-header-border: 1px solid rgba(0, 0, 0, 0.05);
+
+// ==Header Logo
+$app-header-logo-border: 1px solid rgba(0, 0, 0, 0.05);
+
+// ==Navbar Navigation Item
+$app-header-nav-item-margin: 0 1rem;
+
+// ==Navbar Navigation Icon
+$app-header-nav-icon-size: 20px;
+$app-header-nav-icon-color: $primary;
+
+
+// -----------------------------------------------------------------------
+
+// PopUp
+// ==Popup Menu
+$popup-menu-background: #fff;
+$popup-menu-min-width: 225px;
+$popup-menu-radius: .25rem;
+$popup-menu-margin: .25rem;
+$popup-menu-padding: .5rem;
+$popup-menu-shadow: 0px 5px 75px 0px rgba(12,76,140,0.21), 0px 3px 7px 0px rgba(12,76,140,0.14);
+
+// ==Popup Img
+$popup-img-width-height: 40px;
+
+// ==Popup Title
+$popup-title-color: $app-body-color-dark; 
+$popup-title-size: 16px;
+$popup-title-weight: 600;
+$popup-title-spacing: .5px;
+
+// ==Popup SubTitle
+$popup-subtitle-color: $primary; 
+$popup-subtitle-size: 11px;
+$popup-subtitle-spacing: 1px;
+
+// ==Popup Themes Dark
+$popup-menu-background-dark: #1b55e2;
+
+// ==Popup Themes Dark - Popup Title
+$popup-title-color-dark: #fff;
+
+// ==Popup Themes Dark - Popup SubTitle
+$popup-subtitle-color-dark: rgba(255, 255, 255, 0.5);
+
+
+// -----------------------------------------------------------------------
+
+// Login
+// ==Global
+$login-background-color: #fff;
+$login-background-image: url('assets/img/bg-left.png'),
+url('assets/img/bg-right.png');
+$login-background-position: left center,
+right center;
+$login-background-repeat: no-repeat,
+no-repeat;

@@ -1,0 +1,16 @@
+@mixin badge-variant($background, $color){
+    background: $background !important;
+    color: $color !important;
+}
+
+@mixin badge-outline-variant($color, $border){
+    background: transparent !important;
+    color: $color !important;
+    border: 1px solid $border;
+}
+
+
+@mixin badge-gd-variant($background, $color){
+    background: linear-gradient(to right, $background , lighten($background, 10%)) !important;
+    color: $color !important;
+}
