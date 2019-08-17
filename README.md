@@ -10,10 +10,10 @@ Admin template using CoreUI Admin Template
 
 ``` bash
 # clone the repo
-$ git clone https://github.com/coreui/coreui-free-vue-admin-template.git CoreUI-Vue
+$ git clone https://github.com/axellreinno/PaymentAdmin.git PaymentTemplate
 
 # go into app's directory
-$ cd CoreUI-Vue
+$ cd PaymentTemplate
 
 # install app's dependencies
 $ npm install
